@@ -48,6 +48,19 @@ You can find some blacklists here:
 - [Firebog website](https://firebog.net/)
 - [blocklistprojecthub](https://github.com/blocklistproject/Lists)
 
+# Resources
+
+By default, the container is limited to <ins>**2 cores**</ins> and <ins>**4 GB of memory**</ins>.
+
+It is possible to change it going to the docker compose file and modifying the properties
+
+- **cpus**
+- **memory**
+
+# About the updates
+
+There is a folder whith a cron and bash update file that updates once a day the lists of blacklist/whitelist domains
+
 ------ 
 
 For further information you can look at the [Official Pi-hole GitHub](https://github.com/pi-hole/docker-pi-hole) or the [Official Pi-hole Website](https://pi-hole.net/)

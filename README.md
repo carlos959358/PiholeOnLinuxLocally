@@ -22,7 +22,7 @@ The Pi-hole® is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) th
 - **Free**: open source software that helps ensure _you_ are the sole person in control of your privacy
 
 
-
+---
 
 This project uses the 2025 Pihole image, which has a different configuration from previous years.
 

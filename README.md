@@ -1,8 +1,30 @@
-# pihole_locally
-Running Pihole locally with Linux and Docker
+# Run Pihole locally on your Linux
+
+---
+
+![Pihole icon](https://raw.githubusercontent.com/pi-hole/graphics/refs/heads/master/Vortex/vortex_with_text.svg)
+
+The Pi-hole® is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) that protects your devices from unwanted content without installing any client-side software.
+
+- **Easy-to-install**: our dialogs walk you through the simple installation process in less than ten minutes
+- **Resolute**: content is blocked in _non-browser locations_, such as ad-laden mobile apps and smart TVs
+- **Responsive**: seamlessly speeds up the feel of everyday browsing by caching DNS queries
+- **Lightweight**: runs smoothly with [minimal hardware and software requirements](https://docs.pi-hole.net/main/prerequisites/)
+- **Robust**: a command-line interface that is quality assured for interoperability
+- **Insightful**: a beautiful responsive Web Interface dashboard to view and control your Pi-hole
+- **Versatile**: can optionally function as a [DHCP server](https://discourse.pi-hole.net/t/how-do-i-use-pi-holes-built-in-dhcp-server-and-why-would-i-want-to/3026), ensuring _all_ your devices are protected automatically
+- **Scalable**: [capable of handling hundreds of millions of queries](https://pi-hole.net/2017/05/24/how-much-traffic-can-pi-hole-handle/) when installed on server-grade hardware
+- **Modern**: blocks ads over both IPv4 and IPv6
+- **Free**: open source software that helps ensure _you_ are the sole person in control of your privacy
+
+
+
+
+This project uses the 2025 Pihole image, which has a different configuration from previous years.
+
+---
 
 # Step 0: Preparation
-
 ## Install Docker to the latest version
 
 [Get-started with Docker](https://www.docker.com/get-started/)
@@ -10,6 +32,7 @@ Running Pihole locally with Linux and Docker
 ## Clone this repository and move inside the folder
 ![Clone via https or ssh on the green button](images/CloneRepository.png)
 
+---
 
 # Step 1
 ## Configure DNS to always point to localhost
@@ -30,7 +53,7 @@ OR
    2. It should not require any password
       1. If you want to add a password go to `docker-compose.yml` and change the value of `FTLCONF_webserver_api_password` with your password 
 
-
+---
 # Step 2
 
 Once installed and logged into the web browser, you will find something like this.
@@ -48,6 +71,8 @@ You can find some blacklists here:
 - [Firebog website](https://firebog.net/)
 - [blocklistprojecthub](https://github.com/blocklistproject/Lists)
 
+---
+
 # Resources
 
 By default, the container is limited to <ins>**2 cores**</ins> and <ins>**4 GB of memory**</ins>.
@@ -56,6 +81,8 @@ It is possible to change it going to the docker compose file and modifying the p
 
 - **cpus**
 - **memory**
+
+---
 
 # About the updates
 

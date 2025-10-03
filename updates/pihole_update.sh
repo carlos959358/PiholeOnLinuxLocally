@@ -1,5 +1,7 @@
 #!/bin/bash
 
+touch "/etc/pihole/pihole_update_date"
+
 STATE_FILE="/etc/pihole/pihole_update_date"
 TODAY=$(date +"%Y%m%d")
 
